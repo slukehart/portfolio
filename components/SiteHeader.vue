@@ -16,7 +16,6 @@ import { profile } from '~/data/content'
     </div>
     <div class="header-right">
       <p>{{ profile.title }}</p>
-      <p class="muted">{{ profile.location }}</p>
       <p><a :href="`mailto:${profile.email}`">{{ profile.email }}</a></p>
       <div class="social-links">
         <a :href="profile.github" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">

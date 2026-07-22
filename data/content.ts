@@ -4,7 +4,6 @@ export interface Profile {
   /** Set to a path under /public (e.g. '/images/me.jpg') to swap the initials avatar for a photo. */
   photo: string | null
   title: string
-  location: string
   email: string
   github: string
   linkedin: string
@@ -44,7 +43,6 @@ export const profile: Profile = {
   initials: 'SL',
   photo: '/images/me.png',
   title: 'senior full-stack software engineer',
-  location: 'charleston, sc',
   email: 'lukehartsc@gmail.com',
   github: 'https://github.com/slukehart',
   linkedin: 'https://www.linkedin.com/in/spencerlukehartprofile/',
@@ -52,7 +50,7 @@ export const profile: Profile = {
 }
 
 export const about: string[] = [
-  "I'm a software engineer based in Charleston, South Carolina, where I work at Lasso building warehouse-management and logistics software. Most of my recent work sits at the intersection of full-stack product engineering and AI: production LLM agents that fix bugs autonomously, a code knowledge graph that gives agents structural memory, and the design-system groundwork for generative UI.",
+  "I'm a software engineer at Lasso, where I build warehouse-management and logistics software. Most of my recent work sits at the intersection of full-stack product engineering and AI: production LLM agents that fix bugs autonomously, a code knowledge graph that gives agents structural memory, and the design-system groundwork for generative UI.",
   "My degree is in Computing in the Arts, and I still treat software as a creative medium — the best tools feel designed, not just built. If you'd like to chat, reach out at lukehartsc@gmail.com."
 ]
 

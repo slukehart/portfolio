@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Spencer Lukehart — senior full-stack software engineer in Charleston, SC. Full-stack product engineering and AI: production LLM agents, code knowledge graphs, and generative UI.'
+            'Spencer Lukehart — senior full-stack software engineer. Full-stack product engineering and AI: production LLM agents, code knowledge graphs, and generative UI.'
         }
       ],
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
