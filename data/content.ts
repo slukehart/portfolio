@@ -7,7 +7,6 @@ export interface Profile {
   location: string
   email: string
   github: string
-  /** PLACEHOLDER — ask Spencer for the exact URL before shipping. */
   linkedin: string
   resumePath: string
 }
@@ -43,12 +42,12 @@ export interface Education {
 export const profile: Profile = {
   name: 'Spencer Lukehart',
   initials: 'SL',
-  photo: null,
+  photo: '/images/me.png',
   title: 'senior full-stack software engineer',
   location: 'charleston, sc',
   email: 'lukehartsc@gmail.com',
   github: 'https://github.com/slukehart',
-  linkedin: '#',
+  linkedin: 'https://www.linkedin.com/in/spencerlukehartprofile/',
   resumePath: '/resume.pdf'
 }
 
