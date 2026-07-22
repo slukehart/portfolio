@@ -15,7 +15,13 @@ export default defineNuxtConfig({
             'Spencer Lukehart — senior full-stack software engineer. Full-stack product engineering and AI: production LLM agents, code knowledge graphs, and generative UI.'
         }
       ],
-      link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          href: `${process.env.NUXT_APP_BASE_URL ?? '/'}favicon.svg`
+        }
+      ]
     }
   }
 })

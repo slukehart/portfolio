@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { joinURL } from 'ufo'
 import { profile } from '~/data/content'
+
+const { app } = useRuntimeConfig()
+const withBase = (path: string) => joinURL(app.baseURL, path)
 </script>
 
 <template>
@@ -7,7 +11,7 @@ import { profile } from '~/data/content'
     <div class="header-left">
       <img
         v-if="profile.photo"
-        :src="profile.photo"
+        :src="withBase(profile.photo)"
         :alt="profile.name"
         class="avatar"
       />
@@ -38,7 +42,7 @@ import { profile } from '~/data/content'
             <path d="m3 6 9 7 9-7" />
           </svg>
         </a>
-        <a :href="profile.resumePath" download title="Download résumé" aria-label="Download résumé">
+        <a :href="withBase(profile.resumePath)" download title="Download résumé" aria-label="Download résumé">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
             <path d="M12 3v12" />
             <path d="m7 10 5 5 5-5" />
